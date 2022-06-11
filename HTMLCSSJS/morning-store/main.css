@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --color--brand: #444631;
+--color--brand-dark: #353727;
+--color--brand-light: #53553c;
+--color--accent: #ffde64;
+--color--accent-dark: #ffd94b;
+--color--link: #999d73;
+--color--link-dark: #000000;
+--color--text: #212121;
+--color--text-light: rgba(33, 33, 33, 0.7);
+--color--text-lighter: rgba(33, 33, 33, 0.5);
+--color--text-lightest: rgba(33, 33, 33, 0.2);
+--color--text-bg: rgba(33, 33, 33, 0.1);
+--color--text-bg: rgba(33, 33, 33, 0.1);
+--color--headings: #212121;
+--color--alt-text: #666666;
+--color--btn: #ffffff;
+--color--product-bg: #f5f5f5;
+--color--product-sale: #c00000;
+--color--drawer-bg: #ffffff;
+--color--bg: #FFFFFF;
+--color--bg-alpha: rgba(255, 255, 255, 0.8);
+--color--bg-light: #ffffff;
+--color--bg-dark: #f2f2f2;
+--color--drop-shadow: rgba(42, 42, 42, 0.22);
+--font--size-base: 14.0;
+--font--line-base: 30;
+--font--size-h1: 26;
+--font--size-h2: 21;
+--font--size-h3: 18;
+--font--size-h4: 16;
+--font--size-h5: 14;
+--font--size-h6: 14.0;
+--font--size-grid: 14;
+--font--size-nav: 11;
+--font--body: Montserrat, sans-serif;
+--font--body-style: normal;
+--font--body-weight: 400;
+--font--title: Montserrat, sans-serif;
+--font--title-weight: 400;
+--font--title-style: normal;
+--font--title-space: 1px;
+--font--title-transform: normal;
+--font--title-border: 1;
+--font--title-border-size: 3px;
+--font--button: Montserrat, sans-serif;
+--font--button-weight: 400;
+--font--button-style: normal;
+--font--button-space: 1px;
+--font--button-transform: uppercase;
+--font--button-size: 11;
+--font--button-mobile-size: 12px;
+--font--icon-url: //cdn.shopify.com/s/files/1/2090/4191/t/87/assets/sb-icons.eot?v=69961381625854386191654157200;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1840px;
+    margin: 0 auto;
+    /* width: 95%; */
+}
+
+.announcement {
+    background: #222222;
+    text-align: center;
+}
+
+.announcement p {
+    color: #fffcc6;
+    font-family: var(--font--body);
+    font-weight: var(--font--body-weight);
+    font-style: var(--font--body-style);
+    font-size: 0.9rem;
+    padding: 1em 1.5em;
+    margin: 0;
+}
+
+header {
+    border-bottom: 1px solid #666666;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primary-nav, .secondary-nav {
+
+}
+
+.primary-nav-list li, .secondary-nav-list li {
+    display: inline-block;
+}
+
+.primary-nav-list li a, .secondary-nav-list li a {
+    text-decoration: none;
+    color: #111;
+    display: block;
+    line-height: 32px;
+    height: 32px;
+    transition: 0.001s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: var(--font--body);
+    font-weight: var(--font--body-weight);
+    font-style: var(--font--body-style);
+    font-size: calc((var(--font--size-nav) / var(--font--size-base)) * 1rem);
+    margin-right: 10px;
+    /* opacity: .8; */
+}
+
+.header-logo-img {
+    width: auto;
+    height: auto;
+    max-height: 100px;
+    padding: 27px 0;
+    vertical-align: baseline;
+}
+
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+    background: #f2f2f2;
+    padding: 12px 0;
+    font-size: calc((var(--font--size-nav) / var(--font--size-base)) * 1rem);
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom-left {
+    display: flex;
+}
+
+.footer-bottom-left a {
+    color: inherit
+}
+
+.footer-bottom-divider {
+    border-right: 1px solid #111;
+    height: 24px;
+    padding: 0 1em;
+    margin-right: 1.5em;
+}
+
+.footer-bottom-left a {
+    text-decoration: none;
+}
+
+.footer-icons li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.footer-bottom-right li {
+    list-style-type: none;
+    display: inline-block;
+}
