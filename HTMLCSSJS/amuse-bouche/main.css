@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+/* 
+:root {
+  --white: #fff;
+  --dark: #121212;
+  --grey: #e5e5e5;
+  --gr-white: #f8f8f8;
+  --sale: #e91e63;
+  --yellow: #f0cc84;
+  --error: #d61313;
+  --ok: #0bb17f;
+} */
+
+:root {
+  --color_0: 255, 255, 255;
+  --color_27: 218, 143, 119;
+  --color_1: 255, 255, 255;
+  --color_2: 0, 0, 0;
+  --color_3: 237, 28, 36;
+  --color_4: 0, 136, 203;
+  --color_5: 255, 203, 5;
+  --color_6: 114, 114, 114;
+  --color_7: 176, 176, 176;
+  --color_8: 255, 255, 255;
+  --color_28: 199, 63, 18;
+  --color_9: 114, 114, 114;
+  --color_10: 176, 176, 176;
+  --color_11: 255, 255, 255;
+  --color_12: 242, 242, 242;
+  --color_13: 160, 160, 159;
+  --color_14: 96, 94, 94;
+  --color_15: 47, 46, 46;
+  --color_16: 244, 230, 186;
+  --color_17: 233, 214, 150;
+  --color_18: 222, 185, 64;
+  --color_29: 133, 42, 12;
+  --color_19: 148, 123, 43;
+  --color_20: 74, 62, 21;
+  --color_21: 241, 206, 174;
+  --color_22: 228, 177, 133;
+  --color_23: 214, 119, 36;
+  --color_24: 143, 79, 24;
+  --color_25: 71, 40, 12;
+  --color_30: 66, 21, 6;
+  --color_31: 188, 218, 170;
+  --color_32: 144, 182, 121;
+  --color_33: 85, 145, 48;
+  --color_34: 57, 97, 32;
+  --color_35: 28, 48, 16;
+  --font_0: normal normal bold 18px/1.4em proxima-n-w01-reg, proxima-n-w05-reg,
+    sans-serif;
+  --font_1: normal normal normal 16px/1.4em din-next-w01-light,
+    din-next-w02-light, din-next-w10-light, sans-serif;
+  --font_2: normal normal bold 18px/1.4em proxima-n-w01-reg, proxima-n-w05-reg,
+    sans-serif;
+  --font_3: normal normal normal 60px/1.4em din-next-w01-light,
+    din-next-w02-light, din-next-w10-light, sans-serif;
+  --font_4: normal normal normal 40px/1.4em din-next-w01-light,
+    din-next-w02-light, din-next-w10-light, sans-serif;
+  --font_5: normal normal bold 26px/1.4em "playfair display", serif;
+  --font_6: normal normal normal 15px/1.4em helvetica-w01-bold,
+    helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif;
+  --font_7: normal normal normal 14px/1.4em proxima-n-w01-reg, proxima-n-w05-reg,
+    sans-serif;
+  --font_8: normal normal normal 14px/1.4em georgia, palatino, "book antiqua",
+    "palatino linotype", serif;
+  --font_9: normal normal normal 14px/1.4em din-next-w01-light,
+    din-next-w02-light, din-next-w10-light, sans-serif;
+  --font_10: normal normal normal 12px/1.4em din-next-w01-light,
+    din-next-w02-light, din-next-w10-light, sans-serif;
+  --wix-ads-height: 0px;
+  --wix-ads-top-height: 0px;
+  --site-width: 980px;
+  --above-all-z-index: 100000;
+  --portals-z-index: 100001;
+  --minViewportSize: 320;
+  --color_26: 236, 182, 165;
+  --maxViewportSize: 1920;
+}
+
+body {
+  margin: 0;
+  font-family: "Spartan", sans-serif;
+  min-height: 100vh;
+  background: rgb(242,242,242)
+  /* background: blue; */
+
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+ul,
+p,
+span {
+  margin: 0;
+}
+
+header {
+  background: rgb(255, 255, 255);
+  padding: 1em 0;
+  text-align: center;
+  /* margin-bottom: 3em; */
+}
+
+.container {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* HEADER  */
+
+.nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.logo__text {
+  display: inline;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  letter-spacing: 0.15em;
+  font-size: 1.4em;
+  color: rgb(47, 46, 46);
+  text-transform: uppercase;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.nav__list {
+  display: flex;
+  /* margin: 0; */
+}
+
+.nav__list--primary {
+  margin: 0 auto;
+  /* text-align: right; */
+  /* border: 1px solid red; */
+}
+
+.nav__item {
+  list-style: none;
+  /* margin: 0 0 0 1em; */
+  padding: 0 10px;
+}
+
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: rgb(47, 46, 46);
+  font-size: 0.75rem;
+  line-height: 50px;
+  letter-spacing: normal;
+}
+
+.nav__link:hover {
+    opacity: 70%;
+}
+
+.nav__list--secondary .nav__item {
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+
+
+/* HERO SECTION */
+
+.hero-content {
+
+}
+
+.hero-text {
+  text-align: center;
+  background: rgb(255, 255, 255);
+  width: 490px;
+  height: 456px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.hero-link {
+  font-size: 14px;
+  line-height: 18.2px;
+  text-decoration: underline;
+  font-weight: 400;
+  letter-spacing: 3.5px;
+}
+
+.hero-heading {
+  font-size: 26px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  color: rgb(47, 46, 46);
+  margin-top: 1.5em;
+}
