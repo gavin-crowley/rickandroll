@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Grid</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        padding: 2em 0;
+      }
+
+      .site {
+        background: #ededed;
+        min-height: 100vh;
+        text-align: center;
+      }
+
+      .header {
+        background: black;
+        color: white;
+      }
+
+      .hero-img {
+        background: cornflowerblue;
+        color: white;
+      }
+
+      .hero-text {
+        background: salmon;
+        color: white;
+      }
+
+      .post {
+        background: navy;
+        color: white;
+        border-bottom: 1px solid salmon;
+      }
+
+      .image-1 {
+        background: goldenrod;
+        color: black;
+      }
+
+      .image-2 {
+        background: green;
+        color: black;
+      }
+
+      .about {
+        background: gray;
+        color: black;
+      }
+
+      .footer {
+        background: crimson;
+        color: black;
+      }
+
+      @media screen and (min-width: 768px) {
+        .site {
+          display: grid;
+          grid-template-columns: 1fr repeat(4, minmax(auto, 15em)) 1fr;
+          grid-template-rows: auto 456px 1fr auto;
+        }
+
+        .header {
+          grid-column: 1/-1;
+        }
+
+        .hero-img {
+          grid-column: 2/4;
+        }
+
+        .hero-text {
+          grid-column: 4/6;
+        }
+
+        .post-feed {
+          grid-column: 2/5;
+        }
+
+        .post {
+          min-height: 600px;
+        }
+
+        .image-1 {
+          min-height: 313px;
+        }
+
+        .about {
+          min-height: 390px;
+        }
+
+        .image-2 {
+          min-height: 313px;
+        }
+
+        .footer {
+          grid-column: 1/-1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="site">
+      <header class="header">
+        <h2>Header</h2>
+      </header>
+
+      <div class="hero-img">
+        <h2>Hero Image</h2>
+      </div>
+
+      <div class="hero-text">
+        <h2>Hero Text</h2>
+      </div>
+
+      <section class="post-feed">
+        <div class="post">
+          <h2>Post 1</h2>
+        </div>
+
+        <div class="post">
+          <h2>Post 2</h2>
+        </div>
+
+        <div class="post">
+          <h2>Post 3</h2>
+        </div>
+
+        <div class="post">
+          <h2>Post 4</h2>
+        </div>
+      </section>
+
+      <aside class="aside">
+        <div class="image-1">
+          <h2>Image 1</h2>
+        </div>
+
+        <div class="about">
+          <h2>About</h2>
+        </div>
+
+        <div class="image-2">
+          <h2>Image 2</h2>
+        </div>
+      </aside>
+
+      <footer class="footer">
+        <h2>Footer</h2>
+      </footer>
+    </div>
+  </body>
+</html>
