@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Grid</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        padding: 4em 0;
+      }
+
+      .site {
+        background: #ededed;
+        min-height: 100vh;
+        text-align: center;
+      }
+
+      .header {
+        background: black;
+        color: white;
+      }
+
+      .image-1 {
+        background: goldenrod;
+        color: black;
+      }
+
+      .contact-form {
+        background: gray;
+        color: black;
+      }
+
+      .footer {
+        background: crimson;
+        color: black;
+      }
+
+      @media screen and (min-width: 768px) {
+        .site {
+          display: grid;
+          grid-template-columns: 1fr repeat(5, minmax(auto, 15em)) 1fr;
+          grid-template-rows: auto 1fr auto;
+        }
+
+        h2 {
+            padding: 2em;
+        }
+
+        .header {
+          grid-column: 1/-1;
+        }
+
+        .image-1 {
+          /* min-height: 313px; */
+          grid-column: 2/4;
+        }
+
+        .contact-form {
+            grid-column: 4/7;
+        }
+
+        .footer {
+          grid-column: 1/-1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="site">
+      <header class="header">
+        <h2>Header</h2>
+      </header>
+
+      <div class="image-1">
+        <h2>Image</h2>
+      </div>
+
+      <div class="contact-form">
+        <h2>Contact form</h2>
+      </div>
+
+      <footer class="footer">
+        <h2>Footer</h2>
+      </footer>
+    </div>
+  </body>
+</html>
