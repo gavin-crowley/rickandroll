@@ -6,6 +6,24 @@
 import * as express from 'express';
 import { Request, Response } from 'express';
 import * as randomstring from 'randomstring';
+import { MongoClient } from 'mongodb';
+
+const url = 'mongodb://mongoadmin:idealist42-@127.0.0.1:27018/'
+const client = new MongoClient(url)
+const dbName = 'rickandroll'
+
+const connectToDatabase = async () => {
+  await client.connect();
+  console.log('Connected to database server')
+  const db =  client.db(dbName)
+  const collection = db.collection('urls')
+}
+
+connectToDatabase()
+  .then(console.log)
+  .catch(console.error)
+  .finally(() => client.close())
+
 
 const app = express();
 
