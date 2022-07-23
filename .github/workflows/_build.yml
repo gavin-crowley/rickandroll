@@ -1,7 +1,7 @@
 name: Build and Deploy
 on:
   push:
-    branches: [main]
+    branches: [masterq]
 jobs:
   build:
     runs-on: ubuntu-latest
